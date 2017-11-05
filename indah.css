@@ -1,0 +1,134 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	background: #dedede;
+	font-family: 'helvetica', arial, sans-serif;
+	font-size: 0.9em;
+}
+
+.container {
+	max-width: 1080px;
+	margin: 20px auto;
+	padding: 10px;
+	overflow: hidden;
+	background: #fff
+}
+
+.header {
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+}
+
+.footer {
+	clear: both;
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+}
+
+/***** MAIN DIV*****/
+.kiri {
+	width: 250px;
+	border: 1px solid #dedede;
+	background: #e5e5e5;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
+
+.tengah {
+	width: 500px;
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
+
+.kanan {
+	width: 250px;
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+}
+
+/***** MEDIA QUERY *****/
+@media screen and (max-width: 1080px) {
+	.container
+	.header
+	.foooter
+}
+
+@media screen and (max-width: 700px) {
+	.container
+	.header
+	.foooter
+}
+
+
+
+/*menu hamburger*/
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ 
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+ 
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+ 
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #111;}
+ 
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+
+
+
+/* Saat lebar layar kurang dari 680 pixel, sembunyikan semua menu item kecuali item yang pertama yaitu("Home"). Tampilkan juga list item yang berisi link untuk membuka menu yaitu (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+ 
+/* Class dengan nama "responsive" akan ditambahkan oleh JavaScript saat user mengklik icon. Munculnya Class ini akan mendisplay isi list menu 
+*/
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
